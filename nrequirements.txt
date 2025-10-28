@@ -1,0 +1,33 @@
+# Core packages used in the analysis
+scanpy
+anndata
+pandas
+numpy
+matplotlib
+seaborn
+gprofiler-official
+liana-py
+
+# Optional package for advanced spatial analysis
+# squidpy # Uncomment if you used spatial neighborhood analysis
+
+# Common dependencies (usually installed automatically, but good to list)
+h5py
+scipy
+scikit-learn # Dependency for scanpy, liana, etc.
+statsmodels # Dependency for scanpy, plotnine
+numba # Dependency for scanpy (umap)
+umap-learn # Dependency for scanpy
+pynndescent # Dependency for scanpy (umap)
+networkx # Dependency for scanpy (paga)
+python-igraph # Can be used by leiden clustering
+leidenalg # Default leiden backend
+natsort # Dependency for anndata
+packaging # Dependency for anndata
+plotnine # Dependency for liana plotting
+requests # Dependency for gprofiler
+tqdm # Dependency for liana/cellphonedb
+
+# Note: This list might not be exhaustive. It's recommended to run
+# 'pip freeze > requirements.txt' in the actual environment
+# where the analysis was performed to get exact versions for reproducibility.
